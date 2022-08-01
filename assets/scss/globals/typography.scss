@@ -1,0 +1,28 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  color: var(--very-light-gray-l);
+  letter-spacing: rem(10);
+  font-size: rem(22);
+  
+  @include breakpoint(medium) {
+    letter-spacing: rem(16);
+    font-size: rem(32);  }
+}
+
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,58 @@
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+.slider {
+
+    &_item {
+        height: 200px;
+        background-color: red;
+        a {
+            img {}
+        }
+    }
+}
+
+
+// Ovrwrite owl carousel styles
+// .owl-theme .owl-nav {
+//     position: absolute;
+//     margin: 0;
+//     padding: 0;
+//     border-radius: 0;
+//     right: 0;
+//     bottom: 40%;
+
+//     @include breakpoint(medium) {
+//         bottom: 0;
+//         left: 60%;
+//         right: unset;
+//     }
+// }
+
+// .owl-theme .owl-nav [class*=owl-] {
+//     margin: 0;
+
+// }
+
+// .owl-carousel .owl-nav button.owl-next,
+// .owl-carousel .owl-nav button.owl-prev,
+// .owl-carousel button.owl-dot {
+//     background-color: var(--black);
+//     border-radius: 0;
+//     width: rem(60);
+//     height: rem(57);
+
+//     @include breakpoint(medium) {
+//         width: rem(80);
+//         height: rem(78);
+//     }
+
+//     &:hover {
+//         background-color: var(--verydarkgray);
+//     }
+// }

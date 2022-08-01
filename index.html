@@ -4,144 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>سپید &#8211; یک سایت دیگر با وردپرس فارسی</title>
-    <link rel='stylesheet' id='sepid-css'  href='style.css?ver=6.0.1' type='text/css' media='all' />
 
+  <!-- Owl Carousel -->
+   <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+
+    <link rel='stylesheet' id='sepid-css'  href='/dist/style.css' type='text/css' media='all' />
+
+</head>
 
 <body class="rtl home blog theme-sepid">
-
-    <header id="site-header" class="site-header">
-        <div class="spd-header spd-header-main hidden-sm has-center" >
-            <div class="container">
-                <div class="spd-header__row">
-                    <div class="spd-header__col spd-header__col-right  has-logo">
-                        <div class="site-brand spd-header__item">
-                            <a href="http://localhost/sepid/" class="site-brand__logo ">
-                                <img src="http://localhost/sepid/wp-content/uploads/2022/05/log.png" alt="سپید"
-                                     class="image" >
-
-                            </a>
-
-
-
-                            <h1 class="site-brand__title visually-hidden">
-                                <a href="http://localhost/sepid/" rel="home">سپید</a>
-                            </h1>
-
-                            <p class="site-brand__description visually-hidden">یک سایت دیگر با وردپرس فارسی</p>
-                        </div>                    </div>
-
-                    <div class="spd-header__col spd-header__col-center  has-search">
-
-                        <div class="header-search ">
-
-                            <form method="get" class="header-search__form" action="http://localhost/sepid/">
-                                <button class="header-search__submit"
-                                        type="submit"><span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span></button>
-                                <input type="text" name="s" class="header-search__text" value=""
-                                       placeholder="Search in products..." autocomplete="off">
-
-                            </form>
-
-                        </div>
-                    </div>
-
-                    <div class="spd-header__col spd-header__col-left ">
-
-                        <div class="header-account">
-                            <a class="header-account__icon has-label" href="http://localhost/sepid/my-account/" data-toggle="modal" data-target="account-modal">
-                                <span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>        <span class="header-account__label label">ورود / ثبت نام</span>
-                            </a>
-                        </div>
-
-                        <div class="header-cart">
-                            <a class="header-cart__icon has-label" href="http://localhost/sepid/cart/" data-toggle="link" data-target="cart-modal">
-                                <span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M21.9353 20.0337L20.7493 8.51772C20.7003 8.0402 20.2981 7.67725 19.8181 7.67725H4.21338C3.73464 7.67725 3.33264 8.03898 3.28239 8.51523L2.06458 20.0368C1.96408 21.0424 2.29928 22.0529 2.98399 22.8097C3.66874 23.566 4.63999 24.0001 5.64897 24.0001H18.3827C19.387 24.0001 20.3492 23.5747 21.0214 22.8322C21.7031 22.081 22.0361 21.0623 21.9353 20.0337ZM19.6348 21.5748C19.3115 21.9312 18.8668 22.1275 18.3827 22.1275H5.6493C5.16836 22.1275 4.70303 21.9181 4.37252 21.553C4.042 21.1878 3.88005 20.7031 3.92749 20.2284L5.056 9.55014H18.9732L20.0724 20.2216C20.1223 20.7281 19.9666 21.2087 19.6348 21.5748Z" fill="currentColor"></path> <path d="M12.1717 0C9.21181 0 6.80365 2.40811 6.80365 5.36803V8.6138H8.67622V5.36803C8.67622 3.44053 10.2442 1.87256 12.1717 1.87256C14.0992 1.87256 15.6674 3.44053 15.6674 5.36803V8.6138H17.5397V5.36803C17.5397 2.40811 15.1316 0 12.1717 0Z" fill="currentColor"></path> </svg></span>		<span class="counter cart-counter">0</span>
-                                <span class="header-card__label label">سبد خرید</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="spd-header spd-header-bottom hidden-sm no-center" >
-            <div class="container">
-                <div class="spd-header__row">
-                    <div class="spd-header__col spd-header__col-right  has-menu">
-                        <nav class="header-primary-menu spd-nav spd-nav--h">
-                            <ul id="menu-%d9%81%d9%87%d8%b1%d8%b3%d8%aa-%d8%a7%d8%b5%d9%84%db%8c" class="nav-menu spd-flex__jc-fs"><li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-62"><a href="http://localhost/sepid/" aria-current="page">خانه</a></li>
-                                <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-63"><a href="http://localhost/sepid/shop/">فروشگاه</a>
-                                    <ul class="sub-menu">
-                                        <li id="menu-item-112" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-112"><a href="http://localhost/sepid/product-category/clothing/">Clothing</a>
-                                            <ul class="sub-menu">
-                                                <li id="menu-item-113" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-113"><a href="http://localhost/sepid/product-category/clothing/accessories/">Accessories</a></li>
-                                                <li id="menu-item-114" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-114"><a href="http://localhost/sepid/product-category/clothing/hoodies/">Hoodies</a></li>
-                                                <li id="menu-item-115" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-115"><a href="http://localhost/sepid/product-category/clothing/tshirts/">Tshirts</a></li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-116" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-116"><a href="http://localhost/sepid/product-category/decor/">Decor</a></li>
-                                        <li id="menu-item-117" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-117"><a href="http://localhost/sepid/product-category/music/">Music</a></li>
-                                    </ul>
-                                </li>
-                                <li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="http://localhost/sepid/checkout/">پرداخت</a></li>
-                                <li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="http://localhost/sepid/cart/">سبد خرید</a></li>
-                            </ul></nav>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="spd-header spd-header-mobile hidden-lg">
-
-            <div class="container">
-                <div class="spd-header-mobile_section section-action">
-                    <div class="mobile-menu">
-                        <a href="#" class="mobile-menu-toggle hamburger-menu" data-toggle="modal" data-target="mobile-menu-modal">
-                            <span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" width="24" height="18" viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 0H0V2.10674H24V0Z"/><path d="M24 7.88215H0V9.98889H24V7.88215Z"/><path d="M24 15.8925H0V18H24V15.8925Z"/></svg></span>	</a>
-                    </div>            </div>
-                <div class="spd-header-mobile_section section-logo">
-                    <div class="mobile-logo site-branding">
-                        <a href="http://localhost/sepid" class="logo logo-text">
-                            <img class="logo-dark logo-image" src="http://localhost/sepid/wp-content/uploads/2022/07/logo-png.png" alt="سپید">
-                        </a>
-                    </div>                            </div>
-                <div class="spd-header-mobile_section section-icons">
-
-                    <div class="header-account">
-                        <a class="header-account__icon has-label" href="http://localhost/sepid/my-account/" data-toggle="modal" data-target="account-modal">
-                            <span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>        <span class="header-account__label label">ورود / ثبت نام</span>
-                        </a>
-                    </div>
-
-                    <div class="header-cart">
-                        <a class="header-cart__icon has-label" href="http://localhost/sepid/cart/" data-toggle="link" data-target="cart-modal">
-                            <span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M21.9353 20.0337L20.7493 8.51772C20.7003 8.0402 20.2981 7.67725 19.8181 7.67725H4.21338C3.73464 7.67725 3.33264 8.03898 3.28239 8.51523L2.06458 20.0368C1.96408 21.0424 2.29928 22.0529 2.98399 22.8097C3.66874 23.566 4.63999 24.0001 5.64897 24.0001H18.3827C19.387 24.0001 20.3492 23.5747 21.0214 22.8322C21.7031 22.081 22.0361 21.0623 21.9353 20.0337ZM19.6348 21.5748C19.3115 21.9312 18.8668 22.1275 18.3827 22.1275H5.6493C5.16836 22.1275 4.70303 21.9181 4.37252 21.553C4.042 21.1878 3.88005 20.7031 3.92749 20.2284L5.056 9.55014H18.9732L20.0724 20.2216C20.1223 20.7281 19.9666 21.2087 19.6348 21.5748Z" fill="currentColor"></path> <path d="M12.1717 0C9.21181 0 6.80365 2.40811 6.80365 5.36803V8.6138H8.67622V5.36803C8.67622 3.44053 10.2442 1.87256 12.1717 1.87256C14.0992 1.87256 15.6674 3.44053 15.6674 5.36803V8.6138H17.5397V5.36803C17.5397 2.40811 15.1316 0 12.1717 0Z" fill="currentColor"></path> </svg></span>		<span class="counter cart-counter">0</span>
-                            <span class="header-card__label label">سبد خرید</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="spd-header-mobile_section section-search">
-                    <div class="mobile-search">
-                        <form role="search" method="get" class="search-form" action="http://localhost/sepid/">
-                            <label>
-                                <span class="screen-reader-text">جستجو برای</span>
-                                <input type="search" class="search-field" placeholder="جستجو در فروشگاه" value="" name="s" />
-                            </label>
-                            <button type="submit" class="search-submit" >
-                                <span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>        </button>
-                        </form>
-                    </div>            </div>
-            </div>
-
-
-        </div>
-    </header>
 
     <div id="site-main">
         <div id="sepid-main" class="home">
 
+            
+    <section class="slider owl-carousel owl-theme">
+
+        <div class="slider_item">
+            hiiiiii
+            <!-- <a href="#">
+                <img src="/upload/212e60be892ed7754449fd72950ae846a59b6403_1659194139.jpg" alt="" srcset="">
+            </a> -->
+        </div>
+  
+        <!-- <div class="slider_item">
+            <a href="#">
+                <img src="/upload/9a2b7c00246711dec274341211015ac06660d047_1659258092.jpg" alt="" srcset="">
+            </a>
+        </div>
+
+        <div class="slider_item">
+            <a href="#">
+                <img src="/upload/ca00367e96f041323f20950b75fab1c661807e65_1658934246.jpg" alt="" srcset="">
+            </a>
+        </div> -->
+
+      </section>
 
         </div><!-- sepid-main -->
 
@@ -154,46 +54,10 @@
 
 </div><!--site-wrapper-->
 
-<div id="mobile-menu-modal" class="mobile-menu sepid-modal ra-menu-mobile-modal ra-hamburger-modal side-right" tabindex="-1">
-    <div class="off-modal-layer"></div>
-    <div class="menu-mobile-panel-content panel-content">
-        <div class="modal-header">
-            <div class="mobile-logo">
-
-                <div class="mobile-logo site-branding">
-                    <a href="http://localhost/sepid" class="logo logo-text">
-                        <img class="logo-image" src="http://localhost/sepid/wp-content/uploads/2022/06/LOGO.png" alt="سپید">
-                    </a>
-                </div>						                    </div>
-            <a href="#"
-               class="close-account-panel button-close"><span class="spd-svg-icon "><svg aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span></a>
-        </div>
-        <div class="modal-content">
-            <nav class="hamburger-navigation spd-nav spd-nav--v menu-toggle-dropdown">
-                <ul id="menu-%d9%81%d9%87%d8%b1%d8%b3%d8%aa-%d8%a7%d8%b5%d9%84%db%8c-1" class="nav-menu menu text-large"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-62"><a href="http://localhost/sepid/" aria-current="page">خانه</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-63"><a href="http://localhost/sepid/shop/">فروشگاه</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-112"><a href="http://localhost/sepid/product-category/clothing/">Clothing</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-113"><a href="http://localhost/sepid/product-category/clothing/accessories/">Accessories</a></li>
-                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-114"><a href="http://localhost/sepid/product-category/clothing/hoodies/">Hoodies</a></li>
-                                    <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-115"><a href="http://localhost/sepid/product-category/clothing/tshirts/">Tshirts</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-116"><a href="http://localhost/sepid/product-category/decor/">Decor</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-117"><a href="http://localhost/sepid/product-category/music/">Music</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="http://localhost/sepid/checkout/">پرداخت</a></li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a href="http://localhost/sepid/cart/">سبد خرید</a></li>
-                </ul>                    </nav>
-        </div>
-        <div class="modal-footer text-center text-small">
-            <div class="menu-copyright">&copy;2022 سپید All rights reserved</div>                </div>
-    </div>
-</div>
-
     <script type='text/javascript' src='assets/js/jquery.min.js?ver=3.6.0'></script>
+    <script type='text/javascript' src="/assets/js/owl.carousel.min.js"></script>
+    <script type='text/javascript' src="/assets/js/owl.js"></script>
+
     <script type='text/javascript' src='assets/js/main.js?ver=0.1'></script>
 </body>
 </html>

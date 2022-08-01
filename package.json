@@ -1,22 +1,22 @@
 {
-  "name": "socialmediadashboardtoggle",
+  "name": "sepidhtml",
   "version": "1.0.0",
-  "description": "socialmediadashboardtoggle",
+  "description": "sepidhtml",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeynabmvs/SocialMediaDashboardToggle.git"
+    "url": "git+https://github.com/zeynabmvs/sepidhtml.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zeynabmvs/SocialMediaDashboardToggle/issues"
+    "url": "https://github.com/zeynabmvs/sepidhtml/issues"
   },
-  "homepage": "https://github.com/zeynabmvs/SocialMediaDashboardToggle#readme",
+  "homepage": "https://github.com/zeynabmvs/sepidhtml#readme",
   "dependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
