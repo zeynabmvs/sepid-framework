@@ -1,0 +1,69 @@
+@use "../base/variables" as *;
+@use "../base/breakpoints" as *;
+@use "../base/mixins" as *;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  @include body_typography;
+  background-color: $colorGrayLighter;
+}
+
+a, a:link, a:visited{
+  color: $colorText;
+  text-decoration: none;
+}
+
+.container{
+  margin: 0 auto;
+
+  @include breakpoint-up("large"){
+    width: $containerLargeWidth;
+  }
+
+  @include breakpoint-down("large"){
+    width: 100%;
+  }
+}
+
+.spd-svg-icon {
+  display: inline-flex;
+  font-size: 22px;
+
+  > svg{
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.text{
+  &-normal{
+    font-size: $fontSizeNormal;
+  }
+  &-small{
+    font-size: $fontSizeSmall;
+  }
+  &-xsmall{
+    font-size: $fontSizeXSmall;
+  }
+  &-large{
+    font-size: $fontSizeLarge;
+  }
+  &-xlarge{
+    font-size: $fontSizeXLarge;
+  }
+
+  &-center{
+    text-align: center;
+  }
+  &-right{
+    text-align: right;
+  }
+  &-left{
+    text-align: left;
+  }
+}

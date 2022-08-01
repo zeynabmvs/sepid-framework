@@ -1,0 +1,85 @@
+@use "../base/variables" as *;
+
+.site-footer{
+  border-top: 1px solid $colorGray;
+
+  &-light{
+    background-color: $colorWhite;
+  }
+  &-dark{
+    background-color: $colorGrayDarker;
+    color: $colorWhite;
+  }
+  &-gray{
+    background-color: $colorGrayLighter;
+  }
+
+}
+
+.spd-footer{
+  padding: 2rem 0;
+
+  &-main{
+    .container{
+      border-top: 1px solid $colorGray;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-right{
+      order: 0;
+    }
+    .footer-center{
+      order: 1;
+    }
+    .footer-left{
+      order: 2;
+    }
+  }
+
+  &-widgets{
+
+    .footer-widgets-area{
+      flex: 0 0 auto;
+
+      &_cols-5{
+        flex-basis: 20%;
+      }
+      &_cols-4{
+        flex-basis: 25%;
+      }
+      &_cols-3{
+        flex-basis: 33.333%;
+      }
+      &_cols-2{
+        flex-basis: 50%;
+      }
+    }
+
+  }
+}
+
+
+#gotop{
+  position: fixed;
+  bottom: 25px;
+  left: 10px;
+  z-index: 999;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  background-color: #111;
+  color: #ffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 50%;
+  transform: rotate(270deg);
+  transition: all .25s ease;
+
+  &.show-scroll{
+    opacity: 1;
+  }
+}

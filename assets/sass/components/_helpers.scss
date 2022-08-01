@@ -1,0 +1,53 @@
+.spd-flex{
+  display: flex;
+
+  &__jc-se{
+    justify-content: space-evenly !important;
+  }
+  &__jc-sa{
+    justify-content: space-around !important;
+  }
+  &__jc-sb{
+    justify-content: space-between !important;
+  }
+  &__jc-fs{
+      justify-content: flex-start !important;
+  }
+  &__jc-fe{
+      justify-content: flex-end !important;
+  }
+  &__jc-c{
+      justify-content: center !important;
+  }
+
+
+  &__ai-c{
+    align-items: center !important;
+  }
+  &__ai-fs{
+    align-items: flex-start !important;
+  }
+  &__ai-fe{
+    align-items: flex-end !important;
+  }
+
+}
+
+
+
+.screen-reader-text,
+.visually-hidden{
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+  overflow-wrap: normal !important;
+  word-wrap: normal !important;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}

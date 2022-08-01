@@ -1,0 +1,15 @@
+@use '../base/breakpoints' as *;
+
+.admin-bar {
+  .sepid-modal {
+    top: 46px;
+    height: calc(100% - 46px);
+  }
+
+  @include breakpoint-down('small'){
+    .sepid-modal {
+      top: 0;
+      height: 100%;
+    }
+  }
+}

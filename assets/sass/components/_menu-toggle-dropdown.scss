@@ -1,0 +1,41 @@
+@use '../base/variables' as *;
+
+.menu-toggle-dropdown{
+  .sub-menu{
+    position: static;
+    box-shadow: none;
+    font-size: 0.8em;
+    padding: 0 1rem;
+    width: 100%;
+    background: none;
+    display: none;
+    float: none;
+
+    .toggle-menu-arrow{
+      transform: none;
+      top: 25px;
+      transform: translateY(-50%);
+    }
+
+  }
+
+  .sub-menu{
+    padding: 0 1rem 0 0;
+  }
+
+  li.menu-item-has-children{
+    padding: 0;
+
+    &::after{
+      width: 24px;
+      height: 24px;
+      top: 1.5rem;
+    }
+  }
+
+  .active{
+    .toggle-menu-arrow{
+      transform: rotateX(180deg) translateY(50%) !important;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@use "../base/variables" as *;
+
+.spd-header-mobile{
+  .container{
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows: 65px 50px;
+    grid-template-areas: "action logo icons" "search search search";
+    padding: 0 1rem;
+  }
+
+  &_section{
+
+    > div{
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.section-action{
+      grid-area: action;
+
+      .mobile-menu{
+        padding-left: 1rem;
+      }
+    }
+
+    &.section-logo{
+      grid-area: logo;
+
+      .mobile-logo{
+        justify-content: start;
+      }
+    }
+    &.section-icons{
+      grid-area: icons;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0 1.7rem;
+
+      > div {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    &.section-search{
+      grid-area: search;
+    }
+  }
+}
+
+.mobile-search{
+
+  form{
+    width: 100%;
+    position: relative;
+  }
+
+  .search-field{
+    width: 100%;
+    padding: 0.4rem 2.5rem 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    background: #F0F0F1;
+    border:none;
+    color: $colorGrayDarker;
+
+    &::placeholder {
+      color: $colorGrayDarker;
+    }
+  }
+
+
+  .search-submit{
+    background: none;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    top: 0;
+    width: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: $colorGray;
+  }
+}

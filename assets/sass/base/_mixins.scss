@@ -1,0 +1,10 @@
+@use "../base/variables" as *;
+
+@mixin body_typography(){
+  color: $colorText;
+  font-family: 'IRANSansX', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  direction: rtl;
+  text-align: right;
+}
