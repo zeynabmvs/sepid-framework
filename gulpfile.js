@@ -39,6 +39,7 @@ function browserSyncServe(cb) {
         bottom: '0',
       },
     },
+    online: false,
   });
   cb();
 }
@@ -58,6 +59,7 @@ function watchTask() {
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+// exports.default = series(scssTask, browserSyncServe, watchTask);
 
 // Build Gulp Task
 exports.build = series(scssTask, jsTask);

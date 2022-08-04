@@ -19,3 +19,5 @@
 dist/
 node_modules/
 notes.md
+
+.vscode/

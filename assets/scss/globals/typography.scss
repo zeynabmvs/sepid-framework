@@ -3,17 +3,19 @@
 h1,
 h2,
 h3 {
-  margin-top: 0;
+  margin: 0;
 }
 
 h1 {
   color: var(--very-light-gray-l);
-  letter-spacing: rem(10);
-  font-size: rem(22);
-  
+  // letter-spacing: rem(10);
+  // font-size: rem(22);
+
   @include breakpoint(medium) {
-    letter-spacing: rem(16);
-    font-size: rem(32);  }
+    // letter-spacing: rem(16);
+    // font-size: rem(32);
+  }
+
 }
 
 
