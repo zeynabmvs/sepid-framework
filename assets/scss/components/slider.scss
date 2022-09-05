@@ -31,7 +31,7 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        height: rem(180);
+        height: rem(220);
 
         text-align: right;
         // background-color: var(--light-grayish-blue);
@@ -60,6 +60,25 @@
     }
 }
 
+// #slider1 {
+
+//     &_item {
+
+//         img {
+//             width: 100%;
+//             height: rem(220);
+//             object-fit: cover;
+//         }
+//     }
+// }
+
+#slider1_item1 {
+    img {
+        // width: 100%;
+        // height: rem(220);
+        object-fit: cover;
+    }
+}
 
 #slider2.carousel-wrapper {
     width: 1000px;
