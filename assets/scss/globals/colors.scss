@@ -1,14 +1,44 @@
 :root {
-  // Primary Colors
-  --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
+    // Primary Colors
+    --c-primary: hsla(32, 93%, 50%, 1);
+    --c-secondary: hsla(212, 93%, 50%, 1);
+    --c-black: hsla(0, 0%, 13%, 1);
+    --c-white: hsla(0, 0%, 100%, 1);
 
-  --button-background-start: hsl(192, 100%, 67%);
-  --button-background-end: hsl(280, 87%, 65%);
+    --c-success: hsla(140, 74%, 38%, 1);
 
-  --very-light-gray: hsl(0, 0%, 98%);
-  --very-light-grayish-blue: hsl(236, 33%, 92%);
-  --light-grayish-blue: hsl(233, 11%, 84%);
-  --dark-grayish-blue: hsl(236, 9%, 61%);
-  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+    // Tint and Shades    
+    --c-primary-lighter: hsla(32, 93%, 56%, 1);
+    --c-primary-very-light: hsla(32, 94%, 81%, 1);
+    --c-primary-darker: hsla(32, 93%, 44%, 1);
+    --c-primary-very-dark: hsla(32, 94%, 19%, 1);
+
+    --c-secondary-lighter: hsla(212, 93%, 56%, 1);
+    --c-secondary-very-light: hsla(213, 94%, 87%, 1);
+    --c-secondary-darker: hsla(212, 93%, 37%, 1);
+    --c-secondary-very-dark: hsla(212, 94%, 19%, 1);
+
+
+    // Black shades
+    --c-gray: hsla(0, 0%, 93%, 1);
+    --c-gray-dark: hsla(0, 0%, 80%, 1);
+    --c-gray-light: hsla(0, 0%, 98%, 1);
+    --c-gray-darker: hsla(0, 0%, 46%, 1);
+}
+
+// Utiltiy classes
+.text-primary{
+    color: var(--c-primary);
+}
+
+.text-secondary{
+    color: var(--c-secondary);
+}
+
+.text-black{
+    color: var(--c-black);
+}
+
+.text-white{
+    color: var(--c-white);
 }
