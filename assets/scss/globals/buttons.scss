@@ -1,0 +1,82 @@
+:root {
+    --btn-fs-lg: 16px;
+    --btn-fs-sm: 14px;
+
+    --btn-border-radius: 8px;
+    --btn-padding-x: var(--space-xs);
+    --btn-padding-y: var(--space-xs);
+}
+
+.btn {
+    background-color: var(--c-white);
+    color: var(--c-black);
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: var(--btn-border-radius);
+    padding: var(--btn-padding-x) var(--btn-padding-y);
+    font-size: var(--btn-fs-sm);
+    font-family: var(--font-primary);
+}
+
+.btn-primary {
+    background-color: var(--c-primary);
+    color: var(--c-white);
+}
+
+.btn-secondary {
+    background-color: var(--c-secondary);
+    color: var(--c-white);
+}
+
+.btn-success {
+    background-color: var(--c-success);
+    color: var(--c-white);
+}
+
+.btn-lg {
+    font-size: var(--btn-fs-lg);
+}
+
+.btn-sm {
+    font-size: var(--btn-fs-sm);
+}
+
+.btn-outline {
+    color: var(--c-gray-darker);
+    border: 1px solid var(--c-gray-darker);
+}
+
+.btn-outline-primary {
+    color: var(--c-primary);
+    border: 1px solid var(--c-primary);
+}
+
+.btn-outline-secondary {
+    color: var(--c-secondary);
+    border: 1px solid var(--c-secondary);
+}
+
+.btn-outline-success {
+    color: var(--c-success);
+    border: 1px solid var(--c-success);
+}
+
+.btn-link {
+    color: var(--c-gray-darker);
+    border: none;
+}
+
+.btn-link-primary {
+    color: var(--c-primary);
+    border: none;
+}
+
+.btn-link-secondary {
+    color: var(--c-secondary);
+    border: none;
+}
+
+.btn-link-success {
+    color: var(--c-success);
+    border: none;
+}
