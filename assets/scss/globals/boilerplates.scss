@@ -8,6 +8,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--font-primary);
+  direction: rtl;
 
   &.noscroll {
     overflow: hidden;
@@ -27,8 +29,31 @@ ul {
 
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
 .flex {
   display: flex;
+
+  &-inline {
+    display: inline-flex;
+  }
+
+  &-w {
+    flex-wrap: wrap;
+  }
 
   &-jc-sb {
     justify-content: space-between;
@@ -92,9 +117,6 @@ input[type=text] {
   @include breakpoint(medium) {}
 
   &::placeholder {
-    // color: var(--task-text);
-    // opacity: 80%;
-    // font-family: var(--font-josefin);
   }
 
   &:focus {
