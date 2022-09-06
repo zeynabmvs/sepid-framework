@@ -36,41 +36,49 @@
 .btn-outline {
     color: var(--c-gray-darker);
     border: 1px solid var(--c-gray-darker);
+    background-color: transparent;
 }
 
 .btn-outline-primary {
     color: var(--c-primary);
     border: 1px solid var(--c-primary);
+    background-color: transparent;
 }
 
 .btn-outline-secondary {
     color: var(--c-secondary);
     border: 1px solid var(--c-secondary);
+    background-color: transparent;
 }
 
 .btn-outline-success {
     color: var(--c-success);
     border: 1px solid var(--c-success);
+    background-color: transparent;
 }
 
 .btn-link {
     color: var(--c-gray-darker);
     border: none;
+    background-color: transparent;
 }
 
 .btn-link-primary {
     color: var(--c-primary);
     border: none;
+    background-color: transparent;
 }
 
 .btn-link-secondary {
     color: var(--c-secondary);
     border: none;
+    background-color: transparent;
 }
 
 .btn-link-success {
     color: var(--c-success);
     border: none;
+    background-color: transparent;
 }
 
 // Sizes
