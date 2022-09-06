@@ -136,3 +136,11 @@ input[type=text] {
       border-bottom-right-radius: var(--border-radius-size);
   }
 }
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}

@@ -6,6 +6,7 @@
     --c-white: hsla(0, 0%, 100%, 1);
 
     --c-success: hsla(140, 74%, 38%, 1);
+    --c-danger: hsla(0, 100%, 54%, 1);
 
     // Tint and Shades    
     --c-primary-lighter: hsla(32, 93%, 56%, 1);
@@ -42,3 +43,36 @@
 .text-white{
     color: var(--c-white);
 }
+
+.text-success{
+    color: var(--c-success);
+}
+
+.text-danger{
+    color: var(--c-danger);
+}
+
+.bg-primary {
+    background-color: var(--c-primary);
+}
+
+.bg-secondary {
+    background-color: var(--c-secondary);
+}
+
+.bg-black {
+    background-color: var(--c-black);
+}
+
+.bg-white {
+    background-color: var(--c-white);
+}
+
+.bg-success {
+    background-color: var(--c-success);
+}
+
+.bg-danger {
+    background-color: var(--c-danger);
+}
+

@@ -33,14 +33,6 @@
     color: var(--c-white);
 }
 
-.btn-lg {
-    font-size: var(--btn-fs-lg);
-}
-
-.btn-sm {
-    font-size: var(--btn-fs-sm);
-}
-
 .btn-outline {
     color: var(--c-gray-darker);
     border: 1px solid var(--c-gray-darker);
@@ -79,4 +71,13 @@
 .btn-link-success {
     color: var(--c-success);
     border: none;
+}
+
+// Sizes
+.btn-lg {
+    font-size: var(--btn-fs-lg);
+}
+
+.btn-sm {
+    font-size: var(--btn-fs-sm);
 }

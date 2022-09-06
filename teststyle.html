@@ -9,6 +9,9 @@
     <link rel='stylesheet' id='sepid-css' href='/dist/style.css' type='text/css' media='all' />
 
     <style>
+        body {
+            padding: 35px;
+        }
         #test-buttons {
             gap: 12px
         }
@@ -16,25 +19,32 @@
         #test-buttons div {
             gap: 12px
         }
+
     </style>
 </head>
 <body>
     
     <section id="test-buttons" class="flex flex-d-c">
         <div class="flex-inline flex-w flex-d-r">
-            <button class="btn">متن دکمه</button>
-            <button class="btn btn-primary">متن دکمه</button>
-            <button class="btn btn-secondary">متن دکمه</button>
-            <button class="btn btn-success">متن دکمه</button>
+            <button class="btn">دکمه کوچک</button>
+            <button class="btn btn-primary position-relative">دکمه کوچک <div class="badge"> +12 </div></button>
+            <button class="btn btn-secondary">دکمه کوچک</button>
+            <button class="btn btn-success">دکمه کوچک</button>
         </div>
         <div class="flex-inline flex-w flex-d-r">
-            <button class="btn btn-outline">متن دکمه</button>
+            <button class="btn btn-lg">دکمه بزرگ</button>
+            <button class="btn btn-primary btn-lg position-relative"><div class="badge"> +12 </div>دکمه بزرگ</button>
+            <button class="btn btn-secondary btn-lg position-relative"><div class="badge">5</div>دکمه بزرگ</button>
+            <button class="btn btn-success btn-lg position-relative"><div class="badge">1953</div>دکمه بزرگ</button>
+        </div>
+        <div class="flex-inline flex-w flex-d-r">
+            <button class="btn btn-outline position-relative"><div class="badge">1</div>متن دکمه</button>
             <button class="btn btn-outline-primary">متن دکمه</button>
             <button class="btn btn-outline-secondary">متن دکمه</button>
             <button class="btn btn-outline-success">متن دکمه</button>
         </div>
         <div class="flex-inline flex-w flex-d-r">
-            <button class="btn btn-link">متن دکمه</button>
+            <button class="btn btn-link position-relative"><div class="badge">81</div>متن دکمه</button>
             <button class="btn btn-link-primary">متن دکمه</button>
             <button class="btn btn-link-secondary">متن دکمه</button>
             <button class="btn btn-link-success">متن دکمه</button>
