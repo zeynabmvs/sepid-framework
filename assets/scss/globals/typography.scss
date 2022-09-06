@@ -1,30 +1,140 @@
-@use '../util' as *;
 
-h1,
-h2,
-h3 {
-  margin: 0;
+
+$fonts_dir : '/assets/fonts/';
+
+@font-face {
+    font-family: IRANSansX;
+    font-weight: normal;
+    src: url($fonts_dir + 'IRANSansX-Regular.woff2') format('woff2')
+  }
+
+@font-face {
+    font-family: IRANSansX;
+    font-weight: 900;
+    src: url($fonts_dir + 'IRANSansX-Bold.woff2') format('woff2')
+}
+
+
+:root {
+    --font-primary: 'IRANSansX', sans-serif;
+
+    // Font Sizes
+    --fs-display1: 64px;
+    --fs-display2: 56px;
+
+    --fs-h1: 44px;
+    --fs-h2: 40px;
+    --fs-h3: 32px;
+    --fs-h4: 24px;
+    --fs-h5: 20px;
+    --fs-h6: 16px;
+
+    --header-line-height: 1.4;
+
+    --fs-body-xl: 20px;
+    --fs-body-lg: 18px;
+    --fs-body-md: 16px;
+    --fs-body-sm: 14px;
+    --fs-body-xs: 12px;
+
+    --body-line-height: 1.4;
+
+    --fs-caption-md: 12px;
+    --fs-caption-lg: 14px;
+
+    --fs-overline-lg: 14px;
+    --fs-overline-sm: 12px;
+}
+
+
+
+.text-display1 {
+    font-size: var(--fs-display1);
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.text-display2 {
+    font-size: var(--fs-display2);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+// Header styles 
+h1, h2, h3, h4, h5, h6 {
+    line-height: var(--header-line-height);
 }
 
 h1 {
-  color: var(--very-light-gray-l);
-  // letter-spacing: rem(10);
-  // font-size: rem(22);
-
-  @include breakpoint(medium) {
-    // letter-spacing: rem(16);
-    // font-size: rem(32);
-  }
-
+    font-size: var(--fs-h1);
+    font-weight: 800;
 }
 
-
-a,
-a:visited,
-a:active {
-  text-decoration: none;
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: 800;
 }
 
-p {
-  margin: 0;
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: 700;
 }
+
+h4 {
+    font-size: var(--fs-h4);
+    font-weight: 700;
+}
+
+h5 {
+    font-size: var(--fs-h5);
+    font-weight: 700;
+}
+
+h6 {
+    font-size: var(--fs-h6);
+    font-weight: 700;
+}
+
+// Body text
+.text-body-xl {
+    font-size: var(--fs-body-xl);
+    font-weight: 400;
+    line-height: var(--body-line-height);
+}
+
+.text-body-lg {
+    font-size: var(--fs-body-lg);
+    font-weight: 400;
+    line-height: var(--body-line-height);
+}
+
+.text-body-md {
+    font-size: var(--fs-body-md);
+    font-weight: 400;
+    line-height: var(--body-line-height);
+}
+
+.text-body-sm {
+    font-size: var(--fs-body-sm);
+    font-weight: 300;
+    line-height: var(--body-line-height);
+}
+
+.text-body-xs {
+    font-size: var(--fs-body-xs);
+    font-weight: 300;
+    line-height: var(--body-line-height);
+}
+
+.text-caption-lg {
+    font-size: var(--fs-caption-lg);
+    font-weight: 500;
+    line-height: var(--body-line-height);
+}
+
+.text-caption-md {
+    font-size: var(--fs-caption-md);
+    font-weight: 500;
+    line-height: var(--body-line-height);
+}
+
