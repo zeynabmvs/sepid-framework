@@ -12,8 +12,20 @@
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     font-size: 0.8em;
     padding: 0.2em;
     font-weight: 400;
+}
+
+.badge-sm {
+    font-size: 0.6em;
+}
+
+.badge-md {
+    font-size: 0.7em;
+}
+
+.badge-lg {
+    font-size: 0.8em;
 }
