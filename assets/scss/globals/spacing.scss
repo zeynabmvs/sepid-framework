@@ -3,15 +3,43 @@
 :root {
     --space-unit: 1rem;
 
-    --space-xxxxs: calc(0.125 * var(--space-unit));
-    --space-xxxs: calc(0.25 * var(--space-unit));
-    --space-xxs: calc(0.375 * var(--space-unit));
-    --space-xs: calc(0.5 * var(--space-unit));
-    --space-sm: calc(0.75 * var(--space-unit));
-    --space-md: calc(1.25 * var(--space-unit));
-    --space-lg: calc(2 * var(--space-unit));
-    --space-xl: calc(3.25 * var(--space-unit));
-    --space-xxl: calc(5.25 * var(--space-unit));
-    --space-xxxl: calc(8.5 * var(--space-unit));
-    --space-xxxxl: calc(13.75 * var(--space-unit));
+    --space-2: calc(0.125 * var(--space-unit));
+    --space-4: calc(0.25 * var(--space-unit));
+    --space-6: calc(0.375 * var(--space-unit));
+    --space-8: calc(0.5 * var(--space-unit));
+    --space-12: calc(0.75 * var(--space-unit));
+    --space-20: calc(1.25 * var(--space-unit));
+    --space-32: calc(2 * var(--space-unit));
+    --space-52: calc(3.25 * var(--space-unit));
+    --space-84: calc(5.25 * var(--space-unit));
+    --space-136: calc(8.5 * var(--space-unit));
+    --space-220: calc(13.75 * var(--space-unit));
+}
+
+// Mixin to generate padding and margin helper classes
+$spacings: (1, 2, 4, 6, 8, 12, 20, 32, 52, 84, 136, 220, auto); //unit: rem
+
+$sides: (
+  't': 'top',
+  'b': 'bottom',
+  'l': 'left',
+  'r': 'right',
+  'a': ('top', 'left', 'bottom', 'right'),
+  'x': ('left', 'right'),
+  'y': ('top', 'bottom'),
+);
+
+@each $space in $spacings {
+    @each $prefix, $positions in $sides {
+      .p-#{$prefix}-#{$space} {
+        @each $pos in $positions {
+            padding-#{$pos}: if($space == auto, $space, #{$space}rem);
+        }
+      }
+      .m-#{$prefix}-#{$space} {
+        @each $pos in $positions {
+            margin-#{$pos}: if($space == auto, $space, #{$space}rem);
+        }
+      }
+  }
 }
