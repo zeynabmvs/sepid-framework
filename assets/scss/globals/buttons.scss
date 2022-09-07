@@ -5,6 +5,9 @@
     --btn-border-radius: 8px;
     --btn-padding-x: var(--space-xs);
     --btn-padding-y: var(--space-xs);
+
+    --btn-gap-size: 8px;
+    --btn-fw: 700;
 }
 
 .btn {
@@ -16,6 +19,7 @@
     padding: var(--btn-padding-x) var(--btn-padding-y);
     font-size: var(--btn-fs-sm);
     font-family: var(--font-primary);
+    font-weight: var(--btn-fw);
 }
 
 .btn-primary {
@@ -88,4 +92,8 @@
 
 .btn-sm {
     font-size: var(--btn-fs-sm);
+}
+
+.btn-gap {
+    gap: var(--btn-gap-size);
 }

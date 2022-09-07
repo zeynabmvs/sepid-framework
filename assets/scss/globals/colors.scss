@@ -78,3 +78,41 @@
     background-color: var(--c-danger);
 }
 
+// Coloring Icons
+.icon-white {
+    path {
+        fill: var(--c-white);
+    }
+}
+
+.icon-black {
+    path {
+        fill: var(--c-black);
+    }
+}
+
+.icon-gray-darker {
+    path {
+        fill: var(--c-gray-darker);
+    }
+}
+
+.icon-primary {
+    path {
+        fill: var(--c-primary);
+    }
+}
+
+.icon-secondary {
+    path {
+        fill: var(--c-secondary);
+    }
+}
+
+.icon-success {
+    path {
+        fill: var(--c-success);
+    }
+}
+
+
