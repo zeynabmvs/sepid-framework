@@ -17,6 +17,15 @@
 }
 
 // Mixin to generate padding and margin helper classes
+// some of classes:
+// .p-t-2 {
+//   padding-top: 2rem;
+// }
+// .m-x-4 {
+//   margin-left: 4rem;
+//   margin-right: 4rem;
+// }
+
 $spacings: (1, 2, 4, 6, 8, 12, 20, 32, 52, 84, 136, 220, auto); //unit: rem
 
 $sides: (
