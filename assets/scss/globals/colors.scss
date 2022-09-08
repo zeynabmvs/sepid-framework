@@ -29,90 +29,47 @@
     --c-bg: var(--c-gray);
 }
 
-// Utiltiy classes
-.text-primary{
-    color: var(--c-primary);
-}
+// mixins to generate color helper classes
+//  Some of classes:
+// .text-primary {
+//     color: color:var(--c-primary);
+// }
+// .bg-primary {
+//     background-color:var(--c-primary)
+// }
 
-.text-secondary{
-    color: var(--c-secondary);
-}
+$colors: (
+    'primary': #{var(--c-primary)},
+    'secondary': #{var(--c-secondary)},
+    'black': #{var(--c-black)},
+    'white': #{var(--c-white)},
+    'success': #{var(--c-success)},
+    'danger': #{var(--c-danger)},
+    'primary-lighter': #{var(--c-primary-lighter)},
+    'primary-very-light': #{var(--c-primary-very-light)},
+    'primary-darker': #{var(--c-primary-darker)},
+    'primary-very-dark': #{var(--c-primary-very-dark)},
+    'secondary-lighter': #{var(--c-secondary-lighter)},
+    'secondary-very-light': #{var(--c-secondary-very-light)},
+    'secondary-darker': #{var(--c-secondary-darker)},
+    'secondary-very-dark': #{var(--c-secondary-very-dark)},
+    'gray': #{var(--c-gray)},
+    'gray-light': #{var(--c-gray-light)},
+    'gray-dark': #{var(--c-gray-dark)},
+    'gray-darker': #{var(--c-gray-darker)},
+); 
 
-.text-black{
-    color: var(--c-black);
-}
-
-.text-white{
-    color: var(--c-white);
-}
-
-.text-success{
-    color: var(--c-success);
-}
-
-.text-danger{
-    color: var(--c-danger);
-}
-
-.bg-primary {
-    background-color: var(--c-primary);
-}
-
-.bg-secondary {
-    background-color: var(--c-secondary);
-}
-
-.bg-black {
-    background-color: var(--c-black);
-}
-
-.bg-white {
-    background-color: var(--c-white);
-}
-
-.bg-success {
-    background-color: var(--c-success);
-}
-
-.bg-danger {
-    background-color: var(--c-danger);
-}
-
-// Coloring Icons
-.icon-white {
-    path {
-        fill: var(--c-white);
+@each $color, $value in $colors {
+    .text-#{$color} {
+        color: $value;
+    }
+    .bg-#{$color} {
+        background-color: $value;
+    }
+    .icon-#{$color} {
+        path {
+            fill: $value;
+        }
     }
 }
-
-.icon-black {
-    path {
-        fill: var(--c-black);
-    }
-}
-
-.icon-gray-darker {
-    path {
-        fill: var(--c-gray-darker);
-    }
-}
-
-.icon-primary {
-    path {
-        fill: var(--c-primary);
-    }
-}
-
-.icon-secondary {
-    path {
-        fill: var(--c-secondary);
-    }
-}
-
-.icon-success {
-    path {
-        fill: var(--c-success);
-    }
-}
-
 
