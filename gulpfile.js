@@ -19,6 +19,13 @@ function scssTask() {
     .pipe(dest('dist', { sourcemaps: '.' }));
 }
 
+function bootstrapTask() {
+  return src('assets/scss/bootstrap-grid.scss', { sourcemaps: true })
+    .pipe(sass())
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(dest('dist', { sourcemaps: '.' }));
+}
+
 // JavaScript Task
 function jsTask() {
   return src('./src/js/**/*.js', { sourcemaps: true })
@@ -58,7 +65,7 @@ function watchTask() {
 }
 
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = series(scssTask, bootstrapTask, jsTask, browserSyncServe, watchTask);
 // exports.default = series(scssTask, browserSyncServe, watchTask);
 
 // Build Gulp Task
