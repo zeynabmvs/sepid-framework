@@ -35,7 +35,8 @@ $fonts_dir : '/assets/fonts/';
     --fs-body-lg: 18px;
     --fs-body-md: 16px;
     --fs-body-sm: 14px;
-    --fs-body-xs: 12px;
+    --fs-body-xs: 13px;
+    --fs-body-xxs: 12px;
 
     --body-line-height: 1.4;
 
@@ -126,6 +127,12 @@ h6 {
 
 .text-body-xs {
     font-size: var(--fs-body-xs);
+    font-weight: 300;
+    line-height: var(--body-line-height);
+}
+
+.text-body-xxs {
+    font-size: var(--fs-body-xxs);
     font-weight: 300;
     line-height: var(--body-line-height);
 }

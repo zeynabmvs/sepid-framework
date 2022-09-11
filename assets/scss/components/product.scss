@@ -1,24 +1,31 @@
-.product-card {
+#top-sellers {
 
+    .product-card {
+
+        .product {
+            text-align: center;
+        
+            &_image {}
+            &_title {}
+            &_category {}
+            &_off-badge {
+                font-size: 10px;
+                font-weight: 600;
+                color: hsla(35, 100%, 50%, 1);
+                background-color: hsla(35, 100%, 50%, 0.29);
+                border-radius: 2px;
+                width: 30px;
+                height: 14px;
+                text-align: center;
+            }
+            &_off-price {
+                text-decoration: line-through;
+            }
+            &_price {
+            }
+        }
+    }   
 }
 
-.product {
-    gap: 2rem;
 
-    &_image {}
-    &_title {}
-    &_category {}
-    &_off-badge {
-        font-size: 10px;
-        font-weight: 600;
-        color: hsla(35, 100%, 50%, 1);
-        background-color: hsla(35, 100%, 50%, 0.29);
-        border-radius: 2px;
-        width: 30px;
-        height: 14px;
-        text-align: center;
-    }
-    &_off-price {}
-    &_price {
-    }
-}
+

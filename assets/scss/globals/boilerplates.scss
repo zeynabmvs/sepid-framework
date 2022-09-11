@@ -63,6 +63,10 @@ p {
   &-jc-c {
     justify-content: center;
   }
+  
+  &-jc-fe {
+    justify-content: flex-end;
+  }
 
   &-ai-c {
     align-items: center;
@@ -166,4 +170,22 @@ input[type=text] {
     justify-content: right;
   }
 
+}
+
+// gap
+.gap {
+
+  &-6 {
+    gap: rem(6);
+  }
+
+  &-16 {
+    gap: rem(16);
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
