@@ -66,6 +66,7 @@ $fonts_dir : '/assets/fonts/';
 // Header styles 
 h1, h2, h3, h4, h5, h6 {
     line-height: var(--header-line-height);
+    margin: 0;
 }
 
 h1 {

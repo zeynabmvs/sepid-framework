@@ -145,3 +145,25 @@ input[type=text] {
 .position-absolute {
   position: absolute;
 }
+
+// Width Helper classes
+.w-100 {
+  width: 100%;
+}
+
+
+.jc {
+
+  &-left {
+    justify-content: left;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+
+  &-right {
+    justify-content: right;
+  }
+
+}
