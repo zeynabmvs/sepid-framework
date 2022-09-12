@@ -1,4 +1,10 @@
+@use '../util' as *;
+
 #top-sellers {
+
+    .section-head { 
+        margin-bottom: rem(30);
+    }
 
     .product-card {
 

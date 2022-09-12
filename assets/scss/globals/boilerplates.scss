@@ -179,6 +179,10 @@ input[type=text] {
     gap: rem(6);
   }
 
+  &-12 {
+    gap: rem(12);
+  }
+
   &-16 {
     gap: rem(16);
   }
@@ -188,4 +192,8 @@ input[type=text] {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.grid {
+  display: grid;
 }
