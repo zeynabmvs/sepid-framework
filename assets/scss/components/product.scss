@@ -6,10 +6,12 @@
     }
 
     .product-card {
+        // height: rem(320);
+        height: 100%;
 
         .product {
             text-align: center;
-        
+
             &_image {}
             &_title {}
             &_category {}
