@@ -56,17 +56,6 @@ p {
     flex-wrap: wrap;
   }
 
-  &-jc-sb {
-    justify-content: space-between;
-  }
-
-  &-jc-c {
-    justify-content: center;
-  }
-  
-  &-jc-fe {
-    justify-content: flex-end;
-  }
 
   &-ai-c {
     align-items: center;
@@ -84,6 +73,40 @@ p {
     flex-direction: row;
   }
 }
+
+// justicy content
+.jc {
+
+  &-center {
+    justify-content: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+  
+  &-around {
+    justify-content: space-around;
+  }
+  
+  &-flexstart {
+    justify-content: flex-start;
+  }
+
+  &-flexend {
+    justify-content: flex-end;
+  }
+
+  &-right {
+    justify-content: right;
+  }  
+  
+  &-left {
+    justify-content: left;
+  }
+
+}
+
 
 .hide-for-mobile {
   @include breakpoint-down(small) {
@@ -153,23 +176,6 @@ input[type=text] {
 // Width Helper classes
 .w-100 {
   width: 100%;
-}
-
-
-.jc {
-
-  &-left {
-    justify-content: left;
-  }
-
-  &_center {
-    justify-content: center;
-  }
-
-  &-right {
-    justify-content: right;
-  }
-
 }
 
 // gap
