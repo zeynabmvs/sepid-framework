@@ -19,7 +19,7 @@
     padding: var(--btn-padding-x) var(--btn-padding-y);
     font-size: var(--btn-fs-sm);
     font-family: var(--font-primary);
-    font-weight: var(--btn-fw);
+    font-weight: var(--btn-fw) default;
 }
 
 .btn-primary {

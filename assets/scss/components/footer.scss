@@ -1,0 +1,9 @@
+.social {
+
+    li {
+        
+        &:not(:last-child){
+            margin-left: 1rem;
+        }
+    }
+}

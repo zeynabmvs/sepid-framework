@@ -149,3 +149,12 @@ h6 {
     line-height: var(--body-line-height);
 }
 
+
+// create classes for font weight. eg: .fw-400
+$font-weights: (300, 400, 500, 700, 800, 900);
+
+@each $size in $font-weights {
+  .fw-#{$size} {
+    font-weight: #{$size};
+  }
+}
