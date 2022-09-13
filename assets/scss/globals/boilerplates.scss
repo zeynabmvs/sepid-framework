@@ -56,15 +56,6 @@ p {
     flex-wrap: wrap;
   }
 
-
-  &-ai-c {
-    align-items: center;
-  }
-
-  &-ai-b {
-    align-items: baseline;
-  }
-
   &-d-c {
     flex-direction: column;
   }
@@ -104,9 +95,20 @@ p {
   &-left {
     justify-content: left;
   }
-
 }
 
+// Align items
+.ai {
+
+  &-center {
+    align-items: center;
+  }
+
+  &-baseline {
+    align-items: baseline;
+  }
+
+}
 
 .hide-for-mobile {
   @include breakpoint-down(small) {
