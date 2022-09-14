@@ -29,16 +29,12 @@ $fonts_dir : '/assets/fonts/';
     --fs-h5: 20px;
     --fs-h6: 16px;
 
-    --header-line-height: 1.4;
-
     --fs-body-xl: 20px;
     --fs-body-lg: 18px;
     --fs-body-md: 16px;
     --fs-body-sm: 14px;
     --fs-body-xs: 13px;
     --fs-body-xxs: 12px;
-
-    --body-line-height: 1.4;
 
     --fs-caption-md: 12px;
     --fs-caption-lg: 14px;
@@ -49,8 +45,6 @@ $fonts_dir : '/assets/fonts/';
     //badge
     --fs-badge: 14px;
 }
-
-
 
 .text-display1 {
     font-size: var(--fs-display1);
@@ -66,7 +60,7 @@ $fonts_dir : '/assets/fonts/';
 
 // Header styles 
 h1, h2, h3, h4, h5, h6 {
-    line-height: var(--header-line-height);
+    line-height: 1.4;
     margin: 0;
 }
 
@@ -100,53 +94,46 @@ h6 {
     font-weight: 700;
 }
 
+
 // Body text
 .text-body-xl {
     font-size: var(--fs-body-xl);
     font-weight: 400;
-    line-height: var(--body-line-height);
 }
 
 .text-body-lg {
     font-size: var(--fs-body-lg);
     font-weight: 400;
-    line-height: var(--body-line-height);
 }
 
 .text-body-md {
     font-size: var(--fs-body-md);
     font-weight: 400;
-    line-height: var(--body-line-height);
 }
 
 .text-body-sm {
     font-size: var(--fs-body-sm);
     font-weight: 300;
-    line-height: var(--body-line-height);
 }
 
 .text-body-xs {
     font-size: var(--fs-body-xs);
     font-weight: 300;
-    line-height: var(--body-line-height);
 }
 
 .text-body-xxs {
     font-size: var(--fs-body-xxs);
     font-weight: 300;
-    line-height: var(--body-line-height);
 }
 
 .text-caption-lg {
     font-size: var(--fs-caption-lg);
     font-weight: 500;
-    line-height: var(--body-line-height);
 }
 
 .text-caption-md {
     font-size: var(--fs-caption-md);
     font-weight: 500;
-    line-height: var(--body-line-height);
 }
 
 
