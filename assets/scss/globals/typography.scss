@@ -108,7 +108,7 @@ $class-name-separator: '-';
 }
 
 .text {
-    @include generate-fonts-map();
+    @include generate-fonts();
 }
 
 // create classes for font weight. eg: .fw-400
