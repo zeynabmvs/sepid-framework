@@ -1,5 +1,6 @@
-// source: https://codyhouse.co/ds/globals/spacing
+@use '../util' as *;
 
+// source: https://codyhouse.co/ds/globals/spacing
 :root {
     --space-unit: 1rem;
 
@@ -14,6 +15,11 @@
     --space-84: calc(5.25 * var(--space-unit));
     --space-136: calc(8.5 * var(--space-unit));
     --space-220: calc(13.75 * var(--space-unit));
+    
+    @include breakpoint-down(medium) {
+      --space-unit: 0.75rem;
+    }
+
 }
 
 // Mixin to generate padding and margin helper classes

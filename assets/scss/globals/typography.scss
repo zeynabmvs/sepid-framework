@@ -1,12 +1,10 @@
-
-
 $fonts_dir : '/assets/fonts/';
 
 @font-face {
     font-family: IRANSansX;
     font-weight: normal;
     src: url($fonts_dir + 'IRANSansX-Regular.woff2') format('woff2')
-  }
+}
 
 @font-face {
     font-family: IRANSansX;
@@ -22,6 +20,7 @@ $fonts_dir : '/assets/fonts/';
     --fs-display1: 64px;
     --fs-display2: 56px;
 
+    // Header
     --fs-h1: 44px;
     --fs-h2: 40px;
     --fs-h3: 32px;
@@ -29,6 +28,7 @@ $fonts_dir : '/assets/fonts/';
     --fs-h5: 20px;
     --fs-h6: 16px;
 
+    // Body, paragraph
     --fs-body-xl: 20px;
     --fs-body-lg: 18px;
     --fs-body-md: 16px;
@@ -36,112 +36,94 @@ $fonts_dir : '/assets/fonts/';
     --fs-body-xs: 13px;
     --fs-body-xxs: 12px;
 
+    // caption
     --fs-caption-md: 12px;
     --fs-caption-lg: 14px;
 
+    // overline
     --fs-overline-lg: 14px;
     --fs-overline-sm: 12px;
 
-    //badge
+    // badge
     --fs-badge: 14px;
+
+    // Line height
+    --header-line-height: 1.4;
+    --body-line-height: 1.2;
 }
 
-.text-display1 {
-    font-size: var(--fs-display1);
-    font-weight: 900;
-    line-height: 1.4;
+body {
+    font-family: var(--font-primary);
+    direction: rtl;
+    line-height: var(--body-line-height);
 }
 
-.text-display2 {
-    font-size: var(--fs-display2);
-    font-weight: 800;
-    line-height: 1.2;
-}
 
-// Header styles 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
-    margin: 0;
-}
-
-h1 {
-    font-size: var(--fs-h1);
-    font-weight: 800;
-}
-
-h2 {
-    font-size: var(--fs-h2);
-    font-weight: 800;
-}
-
-h3 {
-    font-size: var(--fs-h3);
-    font-weight: 700;
-}
-
-h4 {
-    font-size: var(--fs-h4);
-    font-weight: 700;
-}
-
-h5 {
-    font-size: var(--fs-h5);
-    font-weight: 700;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-    font-size: var(--fs-h6);
-    font-weight: 700;
+    line-height: var(--header-line-height);
 }
 
-
-// Body text
-.text-body-xl {
-    font-size: var(--fs-body-xl);
-    font-weight: 400;
+p {
+    line-height: var(--body-line-height);
 }
 
-.text-body-lg {
-    font-size: var(--fs-body-lg);
-    font-weight: 400;
+$fonts-map: (
+    'display1': ('size': #{var(--fs-display1)}, 'weight': 900),
+    'display2': ('size': #{var(--fs-display2)}, 'weight': 800),
+    'h1': ('size': #{var(--fs-h1)}, 'weight': 800),
+    'h2': ('size': #{var(--fs-h2)}, 'weight': 800),
+    'h3': ('size': #{var(--fs-h3)}, 'weight': 700),
+    'h4': ('size': #{var(--fs-h4)}, 'weight': 700),
+    'h5': ('size': #{var(--fs-h5)}, 'weight': 700),
+    'h6': ('size': #{var(--fs-h6)}, 'weight': 700),
+    'body-xl': ('size': #{var(--fs-body-xl)}, 'weight': 400),
+    'body-lg': ('size': #{var(--fs-body-lg)}, 'weight': 400),
+    'body-md': ('size': #{var(--fs-body-md)}, 'weight': 400),
+    'body-sm': ('size': #{var(--fs-body-sm)}, 'weight': 400),
+    'body-xs': ('size': #{var(--fs-body-xs)}, 'weight': 400),
+    'body-xxs': ('size': #{var(--fs-body-xxs)}, 'weight': 400),
+    'caption-md': ('size': #{var(--fs-caption-md)}, 'weight': 500),
+    'caption-lg': ('size': #{var(--fs-caption-lg)}, 'weight': 500),
+    'overline-lg': ('size': #{var(--fs-overline-lg)}, 'weight': 300),
+    'overline-sm': ('size': #{var(--fs-overline-sm)}, 'weight': 300),
+);
+
+
+$class-name-separator: '-';
+
+@mixin generate-fonts {
+
+    @each $size,
+    $value in $fonts-map {
+        &#{$class-name-separator}#{$size} {
+            font-size: map-get($fonts-map, $size, 'size');
+            font-weight: map-get($fonts-map, $size, 'weight');
+        }
+    }
 }
 
-.text-body-md {
-    font-size: var(--fs-body-md);
-    font-weight: 400;
+.text {
+    @include generate-fonts-map();
 }
-
-.text-body-sm {
-    font-size: var(--fs-body-sm);
-    font-weight: 300;
-}
-
-.text-body-xs {
-    font-size: var(--fs-body-xs);
-    font-weight: 300;
-}
-
-.text-body-xxs {
-    font-size: var(--fs-body-xxs);
-    font-weight: 300;
-}
-
-.text-caption-lg {
-    font-size: var(--fs-caption-lg);
-    font-weight: 500;
-}
-
-.text-caption-md {
-    font-size: var(--fs-caption-md);
-    font-weight: 500;
-}
-
 
 // create classes for font weight. eg: .fw-400
-$font-weights: (300, 400, 500, 700, 800, 900);
+$font-weights: (
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+);
 
 @each $size in $font-weights {
-  .fw-#{$size} {
-    font-weight: #{$size};
-  }
+    .fw-#{$size} {
+        font-weight: #{$size};
+    }
 }
