@@ -31,14 +31,9 @@
     --c-bg: var(--c-gray);
 }
 
-// mixins to generate color helper classes
-//  Some of classes:
-// .text-primary {
-//     color: color:var(--c-primary);
-// }
-// .bg-primary {
-//     background-color:var(--c-primary)
-// }
+// Generate color helper classes. Eg:
+// .text-primary {color: color:var(--c-primary);}
+// .bg-primary {background-color:var(--c-primary)}
 
 $colors: (
     'primary': #{var(--c-primary)},

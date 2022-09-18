@@ -3,19 +3,30 @@
 .badge {
     background-color: var(--c-danger);
     color: var(--c-white);
-
-    position: absolute;
-    right: -0.7em;
-    top: -0.7em;
     min-width: 1.6em;
     height: 1.6em;
     border-radius: 0.8em;
     display: flex;
     justify-content: center;
-    // align-items: center;
     font-size: 0.8em;
     padding: 0.2em;
     font-weight: 400;
+
+    &-notif {
+        position: absolute;
+        right: -0.7em;
+        top: -0.7em;
+    }
+
+    &-off-price {
+        font-size: 0.65em;
+        font-weight: 600;
+        color: hsla(35, 100%, 50%, 1);
+        background-color: hsla(35, 100%, 50%, 0.29);
+        border-radius: 2px;
+        width: 30px;
+        height: 14px;
+    }
 }
 
 .badge-sm {
