@@ -21,6 +21,8 @@ jQuery(document).ready(function ($) {
         margin: 10,
         animateIn: 'fadeIn', 
         animateOut: 'fadeOut',
+        dotsContainer: '#myDots',
+        navContainer: '#myNavs',
     });
     
     $('#slider2 .owl-carousel').owlCarousel({
@@ -56,6 +58,5 @@ jQuery(document).ready(function ($) {
             }
         },
     });
-
-
 });
+

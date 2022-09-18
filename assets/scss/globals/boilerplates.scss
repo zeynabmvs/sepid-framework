@@ -131,29 +131,29 @@ a:active {
   overflow: hidden;
 }
 
-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+// button {
+//   padding: 0;
+//   margin: 0;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+// }
 
-input[type=text] {
-  border: none;
-  border-radius: 0;
-  outline: none;
+// input[type=text] {
+//   border: none;
+//   border-radius: 0;
+//   outline: none;
 
-  @include breakpoint(medium) {}
+//   @include breakpoint(medium) {}
 
-  &::placeholder {
-  }
+//   &::placeholder {
+//   }
 
-  &:focus {
-    border: none;
-  }
+//   &:focus {
+//     border: none;
+//   }
 
-}
+// }
 
 .border {
 
