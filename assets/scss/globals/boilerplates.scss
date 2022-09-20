@@ -63,6 +63,14 @@ a:active {
   &-d-r {
     flex-direction: row;
   }
+
+  &-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
 }
 
 // justicy content
@@ -212,4 +220,18 @@ a:active {
 
 .line-through {
   text-decoration: line-through;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  
+  &::-webkit-scrollbar {
+    // display: none;
+  }
+
+  &-item {
+    flex: 0 0 auto;
+  }
 }
