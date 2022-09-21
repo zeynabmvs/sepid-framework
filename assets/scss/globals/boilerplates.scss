@@ -238,3 +238,41 @@ ul {
     flex: 0 0 auto;
   }
 }
+
+$scroll-arrow-size: 39px;
+
+.scroll-arrow {
+  position: absolute;
+  top: calc(50% - $scroll-arrow-size/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $scroll-arrow-size;
+  height: $scroll-arrow-size;
+  border-radius: 50%;
+  background-color: var(--c-white);
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.19);
+  padding-right: 4px;
+
+  &.right {
+    transform: scaleX(-1);
+    right: -13px;
+    // display: hidden;
+  }
+  
+  &.left {
+    left: -13px;
+  }
+}
+
+.position {
+
+  &-absolute {
+    position: absolute !important;
+  }
+
+  &-relative{
+    position: relative !important;
+  }
+}
