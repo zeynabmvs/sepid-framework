@@ -21,6 +21,22 @@
     font-family: var(--font-primary);
     font-weight: var(--btn-fw) default;
     border: none;
+
+    // Button states
+    &:disabled {
+        pointer-events: none;
+        opacity: .7;
+    }
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &:focus {
+        // value is only for test, not part of design
+        box-shadow: 0 0 0 0.25rem var(--c-gray-dark);
+    }
+
 }
 
 .btn-primary {
@@ -66,30 +82,31 @@
     color: var(--c-gray-darker);
     border: none;
     background-color: transparent;
+    padding: 0 !important;
+
+    &:focus {
+        box-shadow: none;
+    }
 }
 
 .btn-link-primary {
+    @extend .btn-link;
     color: var(--c-primary);
-    border: none;
-    background-color: transparent;
 }
 
 .btn-link-secondary {
+    @extend .btn-link;
     color: var(--c-secondary);
-    border: none;
-    background-color: transparent;
 }
 
 .btn-link-success {
+    @extend .btn-link;
     color: var(--c-success);
-    border: none;
-    background-color: transparent;
 }
 
 .btn-link-gray-darker {
+    @extend .btn-link;
     color: var(--c-gray-darker);
-    border: none;
-    background-color: transparent;
 }
 
 
