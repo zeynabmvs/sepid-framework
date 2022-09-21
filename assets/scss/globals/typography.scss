@@ -72,6 +72,21 @@ p {
     line-height: var(--body-line-height);
 }
 
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:active {
+    color: inherit;
+}
+a:visited {
+    color: var(--c-link-visited);
+}
+
+
 $fonts-map: (
     'display1': ('size': #{var(--fs-display1)}, 'weight': 900),
     'display2': ('size': #{var(--fs-display2)}, 'weight': 800),
