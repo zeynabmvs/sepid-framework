@@ -168,14 +168,6 @@ ul {
   }
 }
 
-.position-relative {
-  position: relative;
-}
-
-.position-absolute {
-  position: absolute;
-}
-
 // Width Helper classes
 .w-100 {
   width: 100%;
@@ -238,6 +230,9 @@ ul {
     flex: 0 0 auto;
   }
 }
+.flip-horizontally {
+  transform: scaleX(-1);
+}
 
 $scroll-arrow-size: 39px;
 
@@ -256,11 +251,11 @@ $scroll-arrow-size: 39px;
   padding-right: 4px;
 
   &.right {
-    transform: scaleX(-1);
+    @extend .flip-horizontally;
     right: -13px;
     // display: hidden;
   }
-  
+
   &.left {
     left: -13px;
   }

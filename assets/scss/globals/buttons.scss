@@ -55,34 +55,39 @@
 }
 
 .btn-outline {
-    color: var(--c-gray-darker);
-    border: 1px solid var(--c-gray-darker);
+    border-width: 1px;
+    border-style: solid;
     background-color: transparent;
 }
 
 .btn-outline-primary {
+    @extend .btn-outline;
     color: var(--c-primary);
-    border: 1px solid var(--c-primary);
-    background-color: transparent;
+    border-color: var(--c-primary);
 }
 
 .btn-outline-secondary {
+    @extend .btn-outline;
     color: var(--c-secondary);
-    border: 1px solid var(--c-secondary);
-    background-color: transparent;
+    border-color: var(--c-secondary);
 }
 
 .btn-outline-success {
+    @extend .btn-outline;
     color: var(--c-success);
-    border: 1px solid var(--c-success);
-    background-color: transparent;
+    border-color: var(--c-success);
+}
+
+.btn-outline-gray-darker {
+    @extend .btn-outline;
+    color: var(--c-gray-darker);
+    border-color: var(--c-gray-darker);
 }
 
 .btn-link {
-    color: var(--c-gray-darker);
     border: none;
     background-color: transparent;
-    padding: 0 !important;
+    // padding: 0 !important;
 
     &:focus {
         box-shadow: none;
