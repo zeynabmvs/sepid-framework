@@ -3,7 +3,10 @@ jQuery(document).ready(function ($) {
     const arrowRightUrl = '/assets/images/arrow-right.svg';
 
     $('#homeSlider .owl-carousel').owlCarousel({
-        items: 1,
+        // items: 4,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
         rtl: true,
         loop: true,
         responsiveClass: true,
