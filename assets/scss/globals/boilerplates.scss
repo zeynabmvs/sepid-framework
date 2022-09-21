@@ -226,7 +226,14 @@ a:active {
   display: flex;
   flex-wrap: nowrap !important;
   overflow-x: auto;
-  
+  // cursor: pointer;
+
+  // &.active {
+  //   background: rgba(255, 255, 255, 0.3);
+  //   cursor: grabbing;
+  //   cursor: -webkit-grabbing;
+  // }
+
   &::-webkit-scrollbar {
     // display: none;
   }
