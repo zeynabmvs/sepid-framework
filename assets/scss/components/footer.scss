@@ -1,3 +1,11 @@
+@use '../util' as *;
+
+.footer-features {
+    @include breakpoint-down(small) {
+        display: none;
+    }
+}
+
 .social {
 
     li {
@@ -7,3 +15,4 @@
         }
     }
 }
+
