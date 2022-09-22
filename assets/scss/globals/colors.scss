@@ -71,3 +71,10 @@ $colors: (
     }
 }
 
+
+a:active {
+    color: inherit;
+}
+a:visited {
+    color: var(--c-link-visited);
+}
