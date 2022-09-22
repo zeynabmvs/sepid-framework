@@ -1,0 +1,67 @@
+@use '../util' as *;
+// This file implements Responsive solution for typography
+// It is not a replacement for typography.scss
+
+:root {
+    --font-primary: 'IRANSansX', sans-serif;
+
+    // Line height
+    --header-line-height: 1.4;
+    --body-line-height: 1.2;
+
+    // font size
+    --text-base-size: 0.9rem; // body font-size
+    --text-scale-ratio: 1.1; // multiplier used to generate the type scale values
+}
+:root, * {
+
+    // type scale
+    --fs-body-xxs: calc(var(--text-base-size) / var(--text-scale-ratio));
+    --fs-body-xs: calc(var(--fs-body-xxs) * var(--text-scale-ratio));
+    --fs-body-sm: calc(var(--fs-body-xs) * var(--text-scale-ratio));
+    --fs-body-md: calc(var(--fs-body-sm) * var(--text-scale-ratio));
+    --fs-body-lg: calc(var(--fs-body-md) * var(--text-scale-ratio));
+    --fs-body-xl: calc(var(--fs-body-lg) * var(--text-scale-ratio));
+}
+
+
+@include breakpoint(medium) {
+    :root {
+        --text-base-size: 1rem;
+        --text-scale-ratio: 1.2;
+    }
+}
+
+@include breakpoint(large) {
+    :root {
+        --text-base-size: 1.15rem;
+        --text-scale-ratio: 1.25;
+    }
+}
+
+body {
+    font-family: var(--font-primary);
+    direction: rtl;
+    line-height: var(--body-line-height);
+    font-size: var(--text-base-size);
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--header-line-height);
+    margin-top: 0;
+}
+
+p {
+    line-height: var(--body-line-height);
+    margin-top: 0;
+}
+
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
