@@ -6,13 +6,31 @@
     }
 }
 
+.footer-navs {
+    .footer-nav {
+        
+        h6 {
+            width: 50%;
+            border-bottom: 1px solid var(--c-gray);
+            padding-bottom: 1rem;
+            
+            @include breakpoint(medium) {
+                width: 80%;
+            }
+        }
+    }
+}
+
 .social {
 
     li {
-        
-        &:not(:last-child){
+
+        &:not(:last-child) {
             margin-left: 1rem;
         }
     }
 }
 
+.line {
+    border-bottom: 1px solid var(--c-gray-dark);
+}
