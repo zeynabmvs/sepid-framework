@@ -17,35 +17,35 @@ $fonts_dir : '/assets/fonts/';
     --font-primary: 'IRANSansX', sans-serif;
 
     // Font Sizes
-    --fs-display1: 64px;
-    --fs-display2: 56px;
+    --fs-display1: 4rem; //64px;
+    --fs-display2: 3.5rem; //56px;
 
     // Header
-    --fs-h1: 44px;
-    --fs-h2: 40px;
-    --fs-h3: 32px;
-    --fs-h4: 24px;
-    --fs-h5: 20px;
-    --fs-h6: 16px;
+    --fs-h1: 2.75rem; //44px;
+    --fs-h2: 2.5rem; //40px;
+    --fs-h3: 2rem; //32px;
+    --fs-h4: 1.5rem; //24px;
+    --fs-h5: 1.25rem; //20px;
+    --fs-h6: 1rem; //16px;
 
     // Body, paragraph
-    --fs-body-xl: 20px;
-    --fs-body-lg: 18px;
-    --fs-body-md: 16px;
-    --fs-body-sm: 14px;
-    --fs-body-xs: 13px;
-    --fs-body-xxs: 12px;
+    --fs-body-xl: 1.25rem; //20px
+    --fs-body-lg: 1.125rem; //18px
+    --fs-body-md: 1rem; //16px
+    --fs-body-sm: 0.875rem; //14px
+    --fs-body-xs: 0.8125rem; //13px
+    --fs-body-xxs: 0.75rem; //12px
 
     // caption
-    --fs-caption-md: 12px;
-    --fs-caption-lg: 14px;
+    --fs-caption-md: 0.75rem; //12px
+    --fs-caption-lg: 0.875rem; //14px
 
     // overline
-    --fs-overline-lg: 14px;
-    --fs-overline-sm: 12px;
+    --fs-overline-lg: 0.875rem; //14px
+    --fs-overline-sm:  0.75rem; //12px
 
     // badge
-    --fs-badge: 14px;
+    --fs-badge: 0.875rem; //14px
 
     // Line height
     --header-line-height: 1.4;
