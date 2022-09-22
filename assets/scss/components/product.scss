@@ -1,27 +1,10 @@
 @use '../util' as *;
 
-#top-sellers {
-
-    .section-head { 
-    }
-}
-
 .product-card {
     height: 100%;
-
-    .product {
-        text-align: center;
-    }
 }   
-
-
-
 
 #vip_products {
     padding: rem(20);
     grid-template-columns: 1fr 4fr;
-
-    .section-head {
-        justify-content: center;
-    }
 }
