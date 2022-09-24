@@ -1,38 +1,41 @@
 @use '../util' as *;
 
 // source: https://codyhouse.co/ds/globals/spacing
+
 :root {
     --space-unit: 1rem;
 
-    --space-2: calc(0.125 * var(--space-unit));
-    --space-4: calc(0.25 * var(--space-unit));
-    --space-6: calc(0.375 * var(--space-unit));
-    --space-8: calc(0.5 * var(--space-unit));
-    --space-12: calc(0.75 * var(--space-unit));
-    --space-20: calc(1.25 * var(--space-unit));
-    --space-32: calc(2 * var(--space-unit));
-    --space-52: calc(3.25 * var(--space-unit));
-    --space-84: calc(5.25 * var(--space-unit));
-    --space-136: calc(8.5 * var(--space-unit));
-    --space-220: calc(13.75 * var(--space-unit));
+    --space-1: calc(var(--space-unit) * .125); // 2px
+    --space-2: calc(var(--space-unit) * .25); // 4px
+    --space-3: calc(var(--space-unit) * .5); // 8px
+    --space-4: calc(var(--space-unit)); // 16px
+    --space-5: calc(var(--space-unit) * 1.5); // 24px
+    --space-6: calc(var(--space-unit) * 2); // 32px
+    --space-7: calc(var(--space-unit) * 2.5); // 40px
+    --space-8: calc(var(--space-unit) * 3); // 48px
     
-    @include breakpoint-down(medium) {
-      --space-unit: 0.75rem;
+    @include breakpoint(medium) {
+      // --space-unit: 0.75rem;
     }
 
 }
 
-// Mixin to generate padding and margin helper classes
+// Generate padding and margin helper classes
 // some of classes:
-// .p-t-2 {
-//   padding-top: 2rem;
-// }
-// .m-x-4 {
-//   margin-left: 4rem;
-//   margin-right: 4rem;
-// }
+// .p-t-2 { padding-top: 2rem; }
+// .m-x-4 { margin-left: 4rem; margin-right: 4rem; }
 
-$spacings: (0, 1, 2, 4, 6, 8, 12, 20, 32, 52, 84, 136, 220, auto); //unit: rem
+$spacings: (
+  0: 0, 
+  1: var(--space-1), 
+  2: var(--space-2), 
+  3: var(--space-3), 
+  4: var(--space-4), 
+  5: var(--space-5), 
+  6: var(--space-6), 
+  7: var(--space-7), 
+  8: var(--space-8), 
+  auto: auto);
 
 $sides: (
   't': 'top',
@@ -44,16 +47,16 @@ $sides: (
   'y': ('top', 'bottom'),
 );
 
-@each $space in $spacings {
+@each $space, $value in $spacings {
     @each $prefix, $positions in $sides {
       .p-#{$prefix}-#{$space} {
         @each $pos in $positions {
-            padding-#{$pos}: if($space == auto, $space, #{$space}rem);
+            padding-#{$pos}: if($space == auto, $space, #{$value});
         }
       }
       .m-#{$prefix}-#{$space} {
         @each $pos in $positions {
-            margin-#{$pos}: if($space == auto, $space, #{$space}rem);
+            margin-#{$pos}: if($space == auto, $space, #{$value});
         }
       }
   }
