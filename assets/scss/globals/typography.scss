@@ -60,7 +60,7 @@ $fonts_dir : '/assets/fonts/';
     }
 }
 
-@include breakpoint(large) {
+@include breakpoint(xxlarge) {
     :root {
         --fs-scale-ratio: 1.1;
     }
@@ -79,11 +79,13 @@ h5,
 h6 {
     line-height: var(--header-line-height);
     margin-top: 0;
+    margin-bottom: var(--space-2);
 }
 
 p {
     line-height: var(--body-line-height);
     margin-top: 0;
+    margin-bottom: var(--space-1);
 }
 
 
