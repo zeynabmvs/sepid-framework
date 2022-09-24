@@ -1,12 +1,13 @@
 :root {
-    --btn-fs-lg: 16px;
-    --btn-fs-sm: 14px;
+    --btn-fs-sm: var(--fs-body-sm);
+    --btn-fs-md: var(--fs-body-md);
+    --btn-fs-lg: var(--fs-body-lg);
 
-    --btn-border-radius: 8px;
-    --btn-padding-x: var(--space-8);
-    --btn-padding-y: var(--space-8);
+    --btn-border-radius: 0.5rem;
+    --btn-padding-x: 0.5rem;
+    --btn-padding-y: 0.5rem;
 
-    --btn-gap-size: 8px;
+    --btn-gap-size: 0.5rem;
     --btn-fw: 700;
 }
 
@@ -17,7 +18,7 @@
     text-decoration: none;
     border-radius: var(--btn-border-radius);
     padding: var(--btn-padding-x) var(--btn-padding-y);
-    font-size: var(--btn-fs-sm);
+    font-size: 1rem;
     font-family: var(--font-primary);
     font-weight: var(--btn-fw) default;
     border: none;
@@ -116,12 +117,16 @@
 
 
 // Sizes
-.btn-lg {
-    font-size: var(--btn-fs-lg);
-}
-
 .btn-sm {
     font-size: var(--btn-fs-sm);
+}
+
+.btn-md {
+    font-size: var(--btn-fs-md);
+}
+
+.btn-lg {
+    font-size: var(--btn-fs-lg);
 }
 
 .btn-gap {
