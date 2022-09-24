@@ -17,67 +17,67 @@ $fonts_dir : '/assets/fonts/';
     --font-primary: 'IRANSansX', sans-serif;
 
     // Font Sizes
-    --fs-display1: 4rem; //64px;
-    --fs-display2: 3.5rem; //56px;
+    // --fs-display1: 4rem; //64px;
+    // --fs-display2: 3.5rem; //56px;
 
     // Header
-    --fs-h1: 2.75rem; //44px;
-    --fs-h2: 2.5rem; //40px;
-    --fs-h3: 2rem; //32px;
-    --fs-h4: 1.5rem; //24px;
-    --fs-h5: 1.25rem; //20px;
-    --fs-h6: 1rem; //16px;
+    // --fs-h1: 2.75rem; //44px;
+    // --fs-h2: 2.5rem; //40px;
+    // --fs-h3: 2rem; //32px;
+    // --fs-h4: 1.5rem; //24px;
+    // --fs-h5: 1.25rem; //20px;
+    // --fs-h6: 1rem; //16px;
 
     // Body, paragraph
-    --fs-body-xl: 1.25rem; //20px
-    --fs-body-lg: 1.125rem; //18px
-    --fs-body-md: 1rem; //16px
-    --fs-body-sm: 0.875rem; //14px
-    --fs-body-xs: 0.8125rem; //13px
-    --fs-body-xxs: 0.75rem; //12px
+    // --fs-body-xl: 1.25rem; //20px
+    // --fs-body-lg: 1.125rem; //18px
+    // --fs-body-md: 1rem; //16px
+    // --fs-body-sm: 0.875rem; //14px
+    // --fs-body-xs: 0.8125rem; //13px
+    // --fs-body-xxs: 0.75rem; //12px
 
     // caption
-    --fs-caption-md: 0.75rem; //12px
-    --fs-caption-lg: 0.875rem; //14px
+    // --fs-caption-md: 0.75rem; //12px
+    // --fs-caption-lg: 0.875rem; //14px
 
-    // overline
-    --fs-overline-lg: 0.875rem; //14px
-    --fs-overline-sm:  0.75rem; //12px
+    // // overline
+    // --fs-overline-lg: 0.875rem; //14px
+    // --fs-overline-sm:  0.75rem; //12px
 
-    // badge
-    --fs-badge: 0.875rem; //14px
+    // // badge
+    // --fs-badge: 0.875rem; //14px
 
     // Line height
-    --header-line-height: 1.4;
-    --body-line-height: 1.2;
+    // --header-line-height: 1.4;
+    // --body-line-height: 1.2;
 }
 
-body {
-    font-family: var(--font-primary);
-    direction: rtl;
-    line-height: var(--body-line-height);
-}
+// body {
+//     font-family: var(--font-primary);
+//     direction: rtl;
+//     line-height: var(--body-line-height);
+// }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: var(--header-line-height);
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     line-height: var(--header-line-height);
+// }
 
-p {
-    line-height: var(--body-line-height);
-}
+// p {
+//     line-height: var(--body-line-height);
+// }
 
 
-a,
-a:visited,
-a:active {
-  text-decoration: none;
-}
+// a,
+// a:visited,
+// a:active {
+//   text-decoration: none;
+// }
 
 $fonts-map: (
     'display1': ('size': #{var(--fs-display1)}, 'weight': 900),
@@ -88,6 +88,8 @@ $fonts-map: (
     'h4': ('size': #{var(--fs-h4)}, 'weight': 700),
     'h5': ('size': #{var(--fs-h5)}, 'weight': 700),
     'h6': ('size': #{var(--fs-h6)}, 'weight': 700),
+    'body-xxxl': ('size': #{var(--fs-body-xxxl)}, 'weight': 400),
+    'body-xxl': ('size': #{var(--fs-body-xxl)}, 'weight': 400),
     'body-xl': ('size': #{var(--fs-body-xl)}, 'weight': 400),
     'body-lg': ('size': #{var(--fs-body-lg)}, 'weight': 400),
     'body-md': ('size': #{var(--fs-body-md)}, 'weight': 400),

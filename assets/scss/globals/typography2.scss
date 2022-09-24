@@ -10,32 +10,45 @@
     --body-line-height: 1.2;
 
     // font size
-    --text-base-size: 0.9rem; // body font-size
-    --text-scale-ratio: 1.1; // multiplier used to generate the type scale values
+    --fs-base: 1rem;
+    --fs-scale-ratio: 0.9; // change this in media queries
+
+    --fs-body-xxs: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.75);
+    --fs-body-xs: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.8127);
+    --fs-body-sm: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.875);
+    --fs-body-md: calc(var(--fs-base) * var(--fs-scale-ratio) * 1);
+    --fs-body-lg: calc(var(--fs-base) * var(--fs-scale-ratio) * 1.125);
+    --fs-body-xl: calc(var(--fs-base) * var(--fs-scale-ratio) * 1.25);
+
+    
+    --fs-h1: calc(var(--fs-base) * var(--fs-scale-ratio) * 2.75);
+    --fs-h2: calc(var(--fs-base) * var(--fs-scale-ratio) * 2.5);
+    --fs-h3: calc(var(--fs-base) * var(--fs-scale-ratio) * 2);
+    --fs-h4: calc(var(--fs-base) * var(--fs-scale-ratio) * 1.5);
+    --fs-h5: calc(var(--fs-base) * var(--fs-scale-ratio) * 1.25);
+    --fs-h6: calc(var(--fs-base) * var(--fs-scale-ratio) * 1);
+
+    --fs-display1: calc(var(--fs-base) * var(--fs-scale-ratio) * 4); 
+    --fs-display2: calc(var(--fs-base) * var(--fs-scale-ratio) * 3.5);
+
+    --fs-caption-md: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.75);
+    --fs-caption-lg: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.875);
+    --fs-overline-lg: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.875);
+    --fs-overline-sm:  calc(var(--fs-base) * var(--fs-scale-ratio) * 0.75);
+    --fs-badge: calc(var(--fs-base) * var(--fs-scale-ratio) * 0.875);
+
 }
-:root, * {
-
-    // type scale
-    --fs-body-xxs: calc(var(--text-base-size) / var(--text-scale-ratio));
-    --fs-body-xs: calc(var(--fs-body-xxs) * var(--text-scale-ratio));
-    --fs-body-sm: calc(var(--fs-body-xs) * var(--text-scale-ratio));
-    --fs-body-md: calc(var(--fs-body-sm) * var(--text-scale-ratio));
-    --fs-body-lg: calc(var(--fs-body-md) * var(--text-scale-ratio));
-    --fs-body-xl: calc(var(--fs-body-lg) * var(--text-scale-ratio));
-}
 
 
-@include breakpoint(medium) {
+@include breakpoint(small) {
     :root {
-        --text-base-size: 1rem;
-        --text-scale-ratio: 1.2;
+        --fs-scale-ratio: 1;
     }
 }
 
 @include breakpoint(large) {
     :root {
-        --text-base-size: 1.15rem;
-        --text-scale-ratio: 1.25;
+        --fs-scale-ratio: 1.1;
     }
 }
 
@@ -43,7 +56,7 @@ body {
     font-family: var(--font-primary);
     direction: rtl;
     line-height: var(--body-line-height);
-    font-size: var(--text-base-size);
+    font-size: var(--fs-base);
 }
 h2,
 h3,
