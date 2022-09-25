@@ -22,6 +22,9 @@
     font-family: var(--font-primary);
     font-weight: var(--btn-fw) default;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     // Button states
     &:disabled {
@@ -129,6 +132,6 @@
     font-size: var(--btn-fs-lg);
 }
 
-.btn-gap {
-    gap: var(--btn-gap-size);
-}
+// .btn-gap {
+//     gap: var(--btn-gap-size);
+// }
