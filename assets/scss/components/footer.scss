@@ -7,15 +7,29 @@
 }
 
 .footer-navs {
+
+    h6 {
+        width: 50%;
+        padding-bottom: 1rem;
+            
+        @include breakpoint(medium) {
+            width: 80%;
+        }
+    }
     .footer-nav {
         
         h6 {
-            width: 50%;
             border-bottom: 1px solid var(--c-gray);
-            padding-bottom: 1rem;
-            
-            @include breakpoint(medium) {
-                width: 80%;
+        }
+
+        ul {
+
+            li {
+                // padding-bottom: var(--space-3);
+
+                &:not(:last-child){
+                    margin-bottom: var(--space-3);
+                }
             }
         }
     }
