@@ -4,26 +4,26 @@
 // px sizes in the comments are for space-unit=1
 
 :root {
-    --space-unit: 1rem;
+  --space-unit: 1rem;
 
-    --space-1: calc(var(--space-unit) * .125); // 2px
-    --space-2: calc(var(--space-unit) * .25); // 4px
-    --space-11: calc(var(--space-unit) * .375); // 6px
-    --space-3: calc(var(--space-unit) * .5); // 8px
-    --space-12: calc(var(--space-unit) * .75); // 12px
-    --space-4: calc(var(--space-unit)); // 16px
-    --space-5: calc(var(--space-unit) * 1.5); // 24px
-    --space-6: calc(var(--space-unit) * 2); // 32px
-    --space-7: calc(var(--space-unit) * 2.5); // 40px
-    --space-8: calc(var(--space-unit) * 3); // 48px
-    --space-9: calc(var(--space-unit) * 3.5); // 56px
-    --space-10: calc(var(--space-unit) * 4); // 64px
+  --space-1: calc(var(--space-unit) * .125); // 2px
+  --space-2: calc(var(--space-unit) * .25); // 4px
+  --space-11: calc(var(--space-unit) * .375); // 6px
+  --space-3: calc(var(--space-unit) * .5); // 8px
+  --space-12: calc(var(--space-unit) * .75); // 12px
+  --space-4: calc(var(--space-unit)); // 16px
+  --space-5: calc(var(--space-unit) * 1.5); // 24px
+  --space-6: calc(var(--space-unit) * 2); // 32px
+  --space-7: calc(var(--space-unit) * 2.5); // 40px
+  --space-8: calc(var(--space-unit) * 3); // 48px
+  --space-9: calc(var(--space-unit) * 3.5); // 56px
+  --space-10: calc(var(--space-unit) * 4); // 64px
 
 
-    
-    @include breakpoint(medium) {
-      // --space-unit: 0.75rem;
-    }
+
+  @include breakpoint(medium) {
+    // --space-unit: 0.75rem;
+  }
 
 }
 
@@ -33,20 +33,21 @@
 // .m-x-4 { margin-left: 4rem; margin-right: 4rem; }
 
 $spacings: (
-  0: 0, 
-  1: var(--space-1), 
-  2: var(--space-2), 
-  3: var(--space-3), 
-  4: var(--space-4), 
-  5: var(--space-5), 
-  6: var(--space-6), 
-  7: var(--space-7), 
-  8: var(--space-8), 
-  9: var(--space-9), 
-  10: var(--space-10), 
-  11: var(--space-11), 
-  12: var(--space-12), 
-  auto: auto);
+  0: 0,
+  1: var(--space-1),
+  2: var(--space-2),
+  3: var(--space-3),
+  4: var(--space-4),
+  5: var(--space-5),
+  6: var(--space-6),
+  7: var(--space-7),
+  8: var(--space-8),
+  9: var(--space-9),
+  10: var(--space-10),
+  11: var(--space-11),
+  12: var(--space-12),
+  auto: auto
+);
 
 $sides: (
   't': 'top',
@@ -59,21 +60,31 @@ $sides: (
 );
 
 @each $space, $value in $spacings {
-    @each $prefix, $positions in $sides {
-      .p-#{$prefix}-#{$space} {
-        @each $pos in $positions {
-            padding-#{$pos}: if($space == auto, $space, #{$value});
-        }
+
+  @each $prefix, $positions in $sides {
+    .p-#{$prefix}-#{$space} {
+      @each $pos in $positions {
+        padding-#{$pos}: if($space ==auto, $space, #{$value});
       }
-      .m-#{$prefix}-#{$space} {
-        @each $pos in $positions {
-            margin-#{$pos}: if($space == auto, $space, #{$value});
-        }
+    }
+    .m-#{$prefix}-#{$space} {
+      @each $pos in $positions {
+        margin-#{$pos}: if($space ==auto, $space, #{$value});
       }
+    }
   }
 }
 
-$border-radius-sizes: (1, 2, 3, 4, 5, 6, 7, 8);
+$border-radius-sizes: (
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+);
 
 @each $size in $border-radius-sizes {
   .border-radius-#{$size} {

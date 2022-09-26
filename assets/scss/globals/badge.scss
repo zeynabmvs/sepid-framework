@@ -11,32 +11,35 @@
     font-size: 0.8em;
     padding: 0.2em;
     font-weight: 400;
-
-    &-notif {
-        position: absolute;
-        right: -0.7em;
-        top: -0.7em;
+    align-items: center;
+    
+    &-sm {
+        font-size: 0.6em;
     }
-
-    &-off-price {
-        font-size: 0.65em;
-        font-weight: 600;
-        color: hsla(35, 100%, 50%, 1);
-        background-color: hsla(35, 100%, 50%, 0.29);
-        border-radius: 2px;
-        width: 30px;
-        height: 14px;
+    
+    &-md {
+        font-size: 0.7em;
+    }
+    
+    &-lg {
+        font-size: 0.8em;
     }
 }
 
-.badge-sm {
-    font-size: 0.6em;
+.badge-notif {
+    @extend .badge;
+    position: absolute;
+    right: -0.7em;
+    top: -0.7em;
 }
 
-.badge-md {
-    font-size: 0.7em;
-}
-
-.badge-lg {
-    font-size: 0.8em;
+.badge-off-price {
+    @extend .badge;
+    font-size: 0.625em;
+    font-weight: 600;
+    color: hsla(35, 100%, 50%, 1);
+    background-color: hsla(35, 100%, 50%, 0.29);
+    border-radius: 2px;
+    width: 30px;
+    height: 14px;
 }
