@@ -8,7 +8,9 @@
 
     --space-1: calc(var(--space-unit) * .125); // 2px
     --space-2: calc(var(--space-unit) * .25); // 4px
+    --space-11: calc(var(--space-unit) * .375); // 6px
     --space-3: calc(var(--space-unit) * .5); // 8px
+    --space-12: calc(var(--space-unit) * .75); // 12px
     --space-4: calc(var(--space-unit)); // 16px
     --space-5: calc(var(--space-unit) * 1.5); // 24px
     --space-6: calc(var(--space-unit) * 2); // 32px
@@ -16,6 +18,8 @@
     --space-8: calc(var(--space-unit) * 3); // 48px
     --space-9: calc(var(--space-unit) * 3.5); // 56px
     --space-10: calc(var(--space-unit) * 4); // 64px
+
+
     
     @include breakpoint(medium) {
       // --space-unit: 0.75rem;
@@ -39,7 +43,9 @@ $spacings: (
   7: var(--space-7), 
   8: var(--space-8), 
   9: var(--space-9), 
-  10: var(--space-9), 
+  10: var(--space-10), 
+  11: var(--space-11), 
+  12: var(--space-12), 
   auto: auto);
 
 $sides: (
