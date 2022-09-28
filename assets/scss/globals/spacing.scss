@@ -22,7 +22,7 @@
 
 
   @include breakpoint(medium) {
-    // --space-unit: 0.75rem;
+    // --space-unit: 1.1rem;
   }
 
 }
@@ -62,11 +62,32 @@ $sides: (
 @each $space, $value in $spacings {
 
   @each $prefix, $positions in $sides {
+    @each $bp, $bp-size in $breakpoints-up {
+      .p-#{$prefix}-#{$bp}-#{$space} {
+        @include breakpoint(#{$bp}){
+          @each $pos in $positions {
+            padding-#{$pos}: if($space ==auto, $space, #{$value});
+          }
+        }
+      }  
+    }
+
     .p-#{$prefix}-#{$space} {
       @each $pos in $positions {
         padding-#{$pos}: if($space ==auto, $space, #{$value});
       }
     }
+
+    @each $bp, $bp-size in $breakpoints-up {
+      .m-#{$prefix}-#{$bp}-#{$space} {
+        @include breakpoint(#{$bp}){
+          @each $pos in $positions {
+            margin-#{$pos}: if($space ==auto, $space, #{$value});
+          }
+        }
+      }  
+    }
+
     .m-#{$prefix}-#{$space} {
       @each $pos in $positions {
         margin-#{$pos}: if($space ==auto, $space, #{$value});
