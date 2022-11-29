@@ -19,8 +19,6 @@
   --space-9: calc(var(--space-unit) * 3.5); // 56px
   --space-10: calc(var(--space-unit) * 4); // 64px
 
-
-
   @include breakpoint(medium) {
     // --space-unit: 1.1rem;
   }

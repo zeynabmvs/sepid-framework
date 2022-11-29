@@ -83,10 +83,6 @@ ul {
   display: block;
 }
 
-.grid {
-  display: grid;
-}
-
 .line-through {
   text-decoration: line-through;
 }
@@ -162,4 +158,18 @@ $scroll-arrow-size: 39px;
 
 .border-none {
   border: none;
+}
+
+.horizontal-scroll2 {
+  display: flex;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-item {
+    flex: 0 0 auto;
+  }
 }
